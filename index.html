@@ -1,8 +1,5 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-<html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -26,7 +23,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li class="dropdown-parent">
-            <a href="#service2">Services</a>
+            <a href="javascript:void(0)">Services</a>
             <ul class="dropdown-menu">
               <li class="dropdown-submenu">
                 <a href="buildingmaterials.html">Building Materials</a>
@@ -52,7 +49,7 @@
                 </ul>
               </li>
               <li class="dropdown-submenu">
-                <a href="Roofings.html">Roofing Products</a>
+                <a href="roofings.html">Roofing Products</a>
                 <ul class="submenu">
                   <li><a href="roofings.html">Roofing Sheets</a></li>
                   <li><a href="roofings.html">Roof Trusses</a></li>
@@ -370,13 +367,8 @@
   <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-  <script>
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  </script>
-  <script src="index.js"></script>
+ 
+
   <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -388,24 +380,9 @@ s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
-
- document.getElementById('language').addEventListener('change', function () {
-    const selectedLang = this.value;
-    alert('Language switched to: ' + selectedLang);
-    // You can redirect or load content based on selectedLang
-  });
-
-    let currentNewsIndex = 0;
-
-  function slideNews(direction) {
-    const slider = document.getElementById("newsSlider");
-    const cards = document.querySelectorAll(".news-card");
-    const total = cards.length;
-    currentNewsIndex = (currentNewsIndex + direction + total) % total;
-    const offset = -currentNewsIndex * cards[0].offsetWidth;
-    slider.style.transform = `translateX(${offset}px)`;
-  }
 </script>
 <!--End of Tawk.to Script-->
+
+ <script src="index.js"></script>
 </body>
 </html>
