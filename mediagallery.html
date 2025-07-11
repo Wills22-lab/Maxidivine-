@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Media Gallery</title>
+  <link rel="stylesheet" href="styles/mediagallery.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+ <header class="navbar">
+    <div class="container1">
+      <div class="logo">
+        <a href="index.html"><img src="images/Maxi.png" alt="maxidivine"></a>
+      </div>
+      <nav class="nav-links" id="navLinks">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown-parent">
+            <a href="#">Services</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+                 <a href="Buildingmaterials.html">Building Materials</a>
+                <ul class="submenu">
+                  <li><a href="buildingmaterials.html">Cement</a></li>
+                  <li><a href="buildingmaterials.html">Iron Rods</a></li>
+                  <li><a href="buildingmaterials.html">Concrete Products</a></li>
+                  <li><a href="buildingmaterials.html">Wall & Floor Tiles</a></li>
+                  <li><a href="buildingmaterials.html">POP Paint</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a href="#">Estate Services</a>
+                <ul class="submenu">
+                  <li><a href="#">Quantity Surveying</a></li>
+                  <li><a href="#">Architecture Work</a></li>
+                  <li><a href="#">U-drain construction</a></li>
+                  <li><a href="#">Architecture & Planning</a></li>
+                  <li><a href="#">Interior & Exterior Design</a></li>
+                  <li><a href="#">Building Project</a></li>
+                  <li><a href="#">Land Surveying</a></li>
+                  <li><a href="#">Estimates</a></li>
+                  <li><a href="#">Consultancy Services</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a href="roofings.html">Roofing Products</a>
+                <ul class="submenu">
+                  <li><a href="roofings.html#roofing-sheets">Roofing Sheets</a></li>
+                  <li><a href="roofings.html#roofing-truss">Roof Trusses</a></li>
+                  <li><a href="roofings.html#roof-fasteners">Roof Nails & Screws</a></li>
+                  <li><a href="roofings.html#installation">Installation</a></li>
+                </ul>
+              </li>
+                <li class="sub">
+                <a href="blockfactory.html">Block Services</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+         <div class="nav-button">
+          <a href="#getstarted">Get Started</a>
+         </div>
+      </nav>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+ <section class="about-hero">
+  <div class="about-hero-overlay">
+    <div class="about-hero-text">
+      <h1 data-aos="slide-right" data-aos-delay="100">Media Gallery</h1>
+    </div>
+  </div>
+</section>
+
+<section class="gallery-wrapper">
+  <h1 class="gallery-title">Explore Our Gallery</h1>
+
+  <div class="tab-buttons">
+    <button class="tab-btn active" onclick="showGallery('video')">Video Gallery</button>
+    <button class="tab-btn" onclick="showGallery('photo')">Photo Gallery</button>
+  </div>
+
+  <div id="video" class="gallery-tab active">
+  <div class="video-thumbnail-gallery">
+    <div class="video-thumb" onclick="openVideo('videos/MAXIDIVINE CHARITY TO KING JESUS CHARITY HOME.mp4')">
+      <img src="images/king 2.jpg" alt="Video 1 Thumbnail" />
+      <div class="play-icon">▶</div>
+    </div>
+    <div class="video-thumb" onclick="openVideo('videos/The King Jesus Charity Home receives donations from Maxidivine Ltd..mp4')">
+      <img src="images/king 3.jpg" alt="Video 2 Thumbnail" />
+      <div class="play-icon">▶</div>
+    </div>
+    <div class="video-thumb" onclick="openVideo('videos/fac.mp4')">
+      <img src="images/f.jpg" alt="Video 3 Thumbnail" />
+      <div class="play-icon">▶</div>
+    </div>
+  </div>
+</div>
+
+<!-- Video Modal -->
+<div class="video-modal" id="videoModal">
+  <div class="video-modal-content">
+    <span class="video-close" onclick="closeVideo()">×</span>
+    <video id="localVideoPlayer" controls autoplay></video>
+  </div>
+</div>
+
+
+
+  <div id="photo" class="gallery-tab">
+   <div class="gallery-grid">
+    <img src="images/king 3.jpg" alt="Photo 1" class="gallery-img" />
+    <img src="images/king 2.jpg" alt="Photo 2" class="gallery-img" />
+    <img src="images/why.jpg" alt="Photo 3" class="gallery-img" />
+    <img src="images/cel.jpg" alt="Photo 4" class="gallery-img" />
+    <img src="images/cel2.jpg" alt="Photo 5" class="gallery-img" />
+    <img src="images/cel3.jpg" alt="Photo 6" class="gallery-img" />
+    <img src="images/cel4.jpg" alt="Photo 6" class="gallery-img" />
+    <img src="images/cel5.jpg" alt="Photo 6" class="gallery-img" />
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close-lightbox" id="closeLightbox">&times;</span>
+    <img src="" alt="Preview" class="lightbox-img" id="lightboxImg">
+  </div>
+  </div>
+</section>
+
+
+<footer class="karatroute-footer">
+  <div class="footer-top">
+  <div class="footer-logo-left">
+    <img src="images/Maxi.png" alt="Maxidivine Logo" />
+  </div>
+
+  <div class="footer-columns">
+    <div class="footer-col">
+      <h4>E-COMMERCE</h4>
+      <ul>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>COMPANY</h4>
+      <ul>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>CONTACT US</h4>
+      <ul>
+      <li>info@maxidivine.com</li>
+      <li>+233 556359913</li>
+      <li>+233 543636175</li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <div class="footer-cta">
+    <p>Be part of a growing community building with confidence, quality, and innovation — the Maxidivine way.
+</p>
+  </div>
+
+  <hr class="footer-divider" />
+
+  <div class="footer-bottom">
+    <p><strong>Maxidivine Ltd &copy; 2025</strong> All rights reserved</p>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms and Conditions</a>
+      <a href="#Top" class="back-to-top">Back to Top ↑</a>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  function showGallery(type) {
+    const tabs = document.querySelectorAll('.gallery-tab');
+    const buttons = document.querySelectorAll('.tab-btn');
+
+    tabs.forEach(tab => tab.classList.remove('active'));
+    buttons.forEach(btn => btn.classList.remove('active'));
+
+    document.getElementById(type).classList.add('active');
+    event.target.classList.add('active');
+  }
+
+ function openVideo(videoPath) {
+    const modal = document.getElementById("videoModal");
+    const player = document.getElementById("localVideoPlayer");
+    player.src = videoPath;
+    modal.style.display = "flex";
+  }
+
+  function closeVideo() {
+    const modal = document.getElementById("videoModal");
+    const player = document.getElementById("localVideoPlayer");
+    modal.style.display = "none";
+    player.pause();
+    player.currentTime = 0;
+    player.src = "";
+  }
+
+     const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  const closeBtn = document.getElementById('closeLightbox');
+
+  document.querySelectorAll('.gallery-img').forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'flex';
+      lightboxImg.src = img.src;
+    });
+  });
+
+  closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+
+  window.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = 'none';
+    }
+  });
+
+   AOS.init({
+    duration: 1000,
+    once: false,
+    offset: 100
+  });
+</script>
+
+
+</body>
+</html>
