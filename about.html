@@ -4,33 +4,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About</title>
-  <link rel="stylesheet" href="styles/about.css" />
   <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles/about.css" />
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="Top"> 
 
- <header class="navbar">
+  <header class="navbar">
     <div class="container1">
-      <div class="logo">
-        <a href="Index.html"><img src="images/Maxi.png" alt="maxidivine"></a>
+      <div class="logo" data-aos="slide-right" data-aos-delay="100">
+        <a href="index.html"><img src="images/Maxi.png" alt="maxidivine"></a>
       </div>
       <nav class="nav-links" id="navLinks">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li class="dropdown-parent">
-            <a href="#">Services</a>
+            <a href="javascript:void(0)">Services</a>
             <ul class="dropdown-menu">
               <li class="dropdown-submenu">
-                 <a href="buildingmaterials.html">Building Materials</a>
+                <a href="buildingmaterials.html">Building Materials</a>
                 <ul class="submenu">
-                  <li><a href="buildingmaterials.html#cement">Cement</a></li>
-                  <li><a href="buildingmaterials.html#ironrods">Iron Rods</a></li>
-                  <li><a href="buildingmaterials.html#tiles">Concrete Products</a></li>
-                  <li><a href="buildingmaterials.html#plywood">Wall & Floor Tiles</a></li>
-                  <li><a href="buildingmaterials.html#pop">POP Paint</a></li>
+                  <li><a href="buildingmaterials.html">Cement</a></li>
+                  <li><a href="buildingmaterials.html">Iron Rods</a></li>
+                  <li><a href="buildingmaterials.html">Concrete Products</a></li>
+                  <li><a href="buildingmaterials.html">Wall & Floor Tiles</a></li>
                 </ul>
               </li>
               <li class="dropdown-submenu">
@@ -48,12 +49,12 @@
                 </ul>
               </li>
               <li class="dropdown-submenu">
-                <a href="Roofings.html">Roofing Products</a>
+                <a href="roofings.html">Roofing Products</a>
                 <ul class="submenu">
-                  <li><a href="roofings.html#roofing-sheets">Roofing Sheets</a></li>
-                  <li><a href="roofings.html#roofing-truss">Roof Trusses</a></li>
-                  <li><a href="roofings.html#roof-fasteners">Roof Nails & Screws</a></li>
-                  <li><a href="roofings.html#installation">Installation</a></li>
+                  <li><a href="roofings.html">Roofing Sheets</a></li>
+                  <li><a href="roofings.html">Roof Trusses</a></li>
+                  <li><a href="roofings.html">Roof Nails & Screws</a></li>
+                  <li><a href="roofings.html">Installation</a></li>
                 </ul>
               </li>
                 <li class="sub">
@@ -63,10 +64,25 @@
           </li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-         <div class="nav-button">
-          <a href="#getstarted">Get Started</a>
-         </div>
+          <li class="dropdown-parent">
+            <a href="">News & Media</a>
+            <ul class="dropdown-menu">
+              <li class="sub">
+                <a href="newsblogs.html">News & Blogs</a>
+              </li>
+              <li class="sub"><a href="mediagallery.html">Media Gallery</a>
+              </li>
+            </ul>
+          </li>
+          <div class="language-selector">
+  <label for="language">🌐 Language:</label>
+  <select id="language">
+    <option value="en">English</option>
+    <option value="fr">Français</option>
+    <option value="es">Español</option>
+  </select>
+</div>
+         
       </nav>
       <div class="hamburger" id="hamburger">
         <span></span>
@@ -75,7 +91,6 @@
       </div>
     </div>
   </header>
- <body>
   
 <section class="about-hero">
   <div class="about-hero-overlay">
@@ -214,6 +229,7 @@ ware and tiles showroom in Kumasi.
 </section>
 
   
+
 <footer class="karatroute-footer">
   <div class="footer-top">
   <div class="footer-logo-left">
@@ -222,23 +238,15 @@ ware and tiles showroom in Kumasi.
 
   <div class="footer-columns">
     <div class="footer-col">
-      <h4>E-COMMERCE</h4>
-      <ul>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-      </ul>
-    </div>
-
-    <div class="footer-col">
       <h4>COMPANY</h4>
       <ul>
-        <li><a href="About.html">About Us</a></li>
+        <li><a href="about.html">About Us</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="Contact.html">Contact Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
 
+   
     <div class="footer-col">
       <h4>CONTACT US</h4>
       <ul>
@@ -247,6 +255,8 @@ ware and tiles showroom in Kumasi.
       <li>+233 543636175</li>
       </ul>
     </div>
+  
+
   </div>
 </div>
 
