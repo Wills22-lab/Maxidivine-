@@ -495,12 +495,12 @@ body {
   }
 
   .hero-slider .overlay h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 1200;
     margin-bottom: 0.5rem;
     line-height: 1.2;
     text-align: left;
-    margin-top: 250px;
+    margin-top: 170px;
     font-family: 'Poppins', sans-serif;  /* Optional: based on style */
   }
 
