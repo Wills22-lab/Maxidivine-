@@ -11,6 +11,8 @@
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+
 </head>
 <body id="Top"> 
 
@@ -93,21 +95,31 @@
 
 
 
-  <section class="block-hero">
-  <div class="block-slider">
-    <div class="block-slide active" style="background-image: url('images/bfa.jpg');">
-      <h1 class="slide-text">Engineered for Strength</h1>
+<section class="hero-slider">
+  <div class="slide active" style="background-image: url('images/IMG_7389.jpg')">
+    <div class="overlay">
+      <h1>Strong Blocks, <span class="desktop">Solid Foundations</span></h1>
+      <p>High-performance blocks crafted for long-term structural integrity.</p>
     </div>
-    <div class="block-slide" style="background-image: url('images/bh.jpg');">
-      <h1 class="slide-text">Precision-Made Concrete Blocks</h1>
-    </div>
-    <div class="block-slide" style="background-image: url('images/IMG_7389.jpg');">
-      <h1 class="slide-text">Durability That Builds Confidence</h1>
-    </div>
+  </div>
 
-    <!-- Manual Controls -->
-    <div class="arrow left" onclick="changeSlide(-1)">&#10094;</div>
-    <div class="arrow right" onclick="changeSlide(1)">&#10095;</div>
+  <div class="slide" style="background-image: url('images/bfa.jpg')">
+    <div class="overlay">
+      <h1>Building Tomorrow, <span class="desktop"> One Block at a Time</span></h1>
+      <p>Strong, consistent blocks for every construction goal.</p>
+    </div>
+  </div>
+
+  <div class="slide" style="background-image: url('images/bh.jpg')">
+    <div class="overlay">
+      <h1>Precision-Made Concrete <span class="desktop">Blocks</span></h1>
+      <p>Reliable, durable, and consistent blocks you can trust for every build.</p>
+    </div>
+  </div>
+
+  <div class="controls">
+    <span class="prev">&#10094;</span>
+    <span class="next">&#10095;</span>
   </div>
 </section>
 
@@ -161,7 +173,7 @@
         They are ideal for load-bearing walls, retaining walls, garden fencing, and various foundation applications.
       </p>
       <div class="block-contact">
-        <span class="block-phone">📞 0276955161</span>
+        <span class="block-phone">📞 0249187334</span>
         <span class="request-text">Request for Product</span>
       </div>
     </div>
@@ -264,8 +276,55 @@
     current = (current + direction + slides.length) % slides.length;
     slides[current].classList.add('active');
   }
+
+  
+
+// =========================
+// Hero Section Slider
+// =========================
+document.addEventListener("DOMContentLoaded", () => {
+  const slides = document.querySelectorAll(".slide");
+  const prev = document.querySelector(".prev");
+  const next = document.querySelector(".next");
+  let index = 0;
+
+  function showSlide(i) {
+    slides.forEach((slide) => slide.classList.remove("active"));
+    slides[i].classList.add("active");
+  }
+
+  function nextSlide() {
+    index = (index + 1) % slides.length;
+    showSlide(index);
+  }
+
+  function prevSlide() {
+    index = (index - 1 + slides.length) % slides.length;
+    showSlide(index);
+  }
+
+  if (slides.length && next && prev) {
+    next.addEventListener("click", nextSlide);
+    prev.addEventListener("click", prevSlide);
+    setInterval(nextSlide, 10000);
+  }
+});
 </script>
 
+
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/68533a19b91265191422091f/1iu2hltr0';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 
 </body>
 </html>
