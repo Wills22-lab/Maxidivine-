@@ -192,3 +192,11 @@ if (prevBtn && nextBtn) {
   prevBtn.addEventListener("click", () => slideNews(-1));
   nextBtn.addEventListener("click", () => slideNews(1));
 }
+
+ document.querySelector('.back-to-top').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });

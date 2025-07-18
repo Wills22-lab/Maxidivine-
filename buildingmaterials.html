@@ -11,6 +11,7 @@
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body id="Top"> 
 
@@ -103,7 +104,7 @@
 </section>
 
 
-<section class="services-hero-heading">
+<section class="services-hero-heading" id="materials">
   <div class="heading-container">
     <h1>Our <span>Services</span></h1>
     <p>Explore a full range of high quality building materials and construction solutions designed to meet every project need from start to finish.</p>
@@ -161,7 +162,7 @@
          mild steel and high-tensile rods for slabs, columns,
          and high-load projects which are reliable options for homes and infrastructure.
       </p>
-      <a href="index.html#contact" class="btn-contact">Contact Us <span>&#10140;</span></a>
+      <a href="contact.html" class="btn-contact">Contact Us <span>&#10140;</span></a>
     </div>
 
     <!-- Right Side -->
@@ -183,7 +184,7 @@
          and <strong>ceramic</strong> options in matte, glossy, and textured finishes suitable 
           for both interior and exterior use.
       </p>
-      <a href="index.html#contact" class="btn-contact">Contact Us <span>&#10140;</span></a>
+      <a href="contact.html" class="btn-contact">Contact Us <span>&#10140;</span></a>
     </div>
 
     <!-- Right Side -->
@@ -204,7 +205,7 @@
          and easy to work with.  
          We provide the right grade and thickness to match your project needs.
       </p>
-      <a href="#contact" class="btn-contact">Contact Us <span>&#10140;</span></a>
+      <a href="contact.html" class="btn-contact">Contact Us <span>&#10140;</span></a>
     </div>
 
     <!-- Right Side: Image -->
@@ -231,7 +232,7 @@
         look that enhances interior aesthetics. It's easy to apply, quick-drying, 
         and ideal for creating modern, elegant ceiling designs.
       </p>
-      <a href="index.html#contact" class="btn-contact">Contact Us <span>&#10140;</span></a>
+      <a href="contact.html" class="btn-contact">Contact Us <span>&#10140;</span></a>
     </div>
   </div>
 </section>
@@ -241,59 +242,53 @@
     <h2>Reach out to explore how Maxidivine can support your construction and 
       estate projects with high quality materials, expert services, and reliable delivery.
     </h2>
-    <a href="#contact" class="parallax-btn">Get in Touch</a>
+    <a href="contact.html" class="parallax-btn">Get in Touch</a>
   </div>
 </section>
  
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <img src="images/maxidivine-logo.png" alt="Maxidivine Logo" class="footer-logo">
+      <p>Building with trust, quality, and commitment.</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/MaxidivineLimitedCompany"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/maxidivine_?igsh=aG1zb3pxaHZpNHNi"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
 
-
-<footer class="karatroute-footer">
-  <div class="footer-top">
-  <div class="footer-logo-left">
-    <img src="images/Maxi.png" alt="Maxidivine Logo" />
-  </div>
-
-  <div class="footer-columns">
-    <div class="footer-col">
-      <h4>COMPANY</h4>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
       <ul>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </div>
 
-   
-    <div class="footer-col">
-      <h4>CONTACT US</h4>
-      <ul>
-      <li>info@maxidivine.com</li>
-      <li>+233 556359913</li>
-      <li>+233 543636175</li>
-      </ul>
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p>Maxidivine Company Ltd</p>
+      <p>Email: info@maxidivine.com</p>
+      <p>Phone: +233 546359913/+233 249187334</p>
+      <p>Location: Kumasi, Ghana</p>
     </div>
-  
 
-  </div>
-</div>
-
-
-  <div class="footer-cta">
-    <p>Be part of a growing community building with confidence, quality, and innovation — the Maxidivine way.
-</p>
+    <div class="footer-map">
+      <img src="images/m-removebg-preview.png" alt="Map" class="map-img">
+    </div>
   </div>
 
-  <hr class="footer-divider" />
+  <!-- Back to Top link inside the footer -->
+  <a href="#" class="back-to-top" title="Back to Top">&#8679;</a>
+
 
   <div class="footer-bottom">
-    <p><strong>Maxidivine Ltd &copy; 2025</strong> All rights reserved</p>
-    <div class="footer-links">
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms and Conditions</a>
-      <a href="#Top" class="back-to-top">Back to Top ↑</a>
-    </div>
+    <p>&copy; 2025 Maxidivine. All rights reserved.</p>
   </div>
 </footer>
+
 
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
@@ -383,6 +378,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+
+document.querySelector('.back-to-top').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
 </script>
 
 
