@@ -300,26 +300,35 @@ body {
 
 .dot-controls {
   position: absolute;
-  bottom: 25px;
-  width: 100%;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  justify-content: center;
-  gap: 12px;
+  gap: 10px;
+  padding: 10px 20px;
+  background-color: rgba(193, 189, 189, 0); /* Your color */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.296);
   z-index: 10;
 }
 
 .dot {
-  height: 12px;
   width: 12px;
-  background-color: rgba(255, 255, 255, 0.5);
+  height: 12px;
+  background-color: white;
   border-radius: 50%;
+  opacity: 0.7;
+  transition: all 0.3s ease;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.dot.active,
-.dot:hover {
-  background-color: #d35400;
+.dot:hover,
+.dot.active {
+  opacity: 1;
+  transform: scale(1.2);
 }
 
 
@@ -653,7 +662,7 @@ body {
   transform: translate(-50%, -50%);
   color: white;
   text-align: left;
-  background: rgba(24, 23, 29, 0.364);
+  background: rgba(29, 29, 30, 0.474);
   padding: 2rem;
   border-radius: 12px;
   max-width: 800px;
@@ -1489,11 +1498,14 @@ body {
   font-weight: 300;
   margin-bottom: 60px;
   font-family:'Times New Roman', Times, serif;
-  margin-left: -10px;
+  margin-left: -10px;  
 }
 
 .footer-bottom p {
   margin-right: 70%;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: 300;
 }
 
 /* Back to Top */
@@ -1501,7 +1513,7 @@ body {
   position: absolute;
   bottom: 15px;
   right: 20px;
-  background-color: #f27827;
+  background-color: #d35400 !important;
   color: white;
   font-size: 20px;
   width: 40px;
@@ -1568,5 +1580,8 @@ body {
   .footer-bottom p {
     margin-right: 0;
     text-align: center; /* Optional: center it on mobile */
+    font-family:'Times New Roman', Times, serif;
+     font-size: 20px;
+     font-weight: 300;
   }
 }
